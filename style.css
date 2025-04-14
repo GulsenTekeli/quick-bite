@@ -2,7 +2,6 @@
 
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 
-
 *{
     margin: 0;
     padding: 0;
@@ -10,46 +9,67 @@
     font-family: 'Poppins',sans-serif;
 }
 
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0; 
+    display: flex;
+    flex-direction: column; 
+}
+
 header{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 85vw;
+    height: 95%;
     padding: 11px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 99;
     margin-left: auto;
+    /* background-color: #cb5846; */
+    position: relative;
+    margin: 0;
+    font-size: 14px;
+    margin-top: auto;
 }
+
 .logo{
-    font-size: 3em;
     color: bisque;
-    user-select: none;
-    height: 80px;
+    user-select: none; 
+    height: 40px;
     width: auto;
     display: flex;
-    padding: 0.25rem 0px;
+    padding: 0.25rem 0px; 
     margin-left: 0;
     justify-content: space-between;
     border: none;
     position: relative;
     background-color: transparent;
     align-items: center;
+    padding-top: 40px;
+    padding-left: 0;
+    border-radius: 50% ;
+    border-radius: 20px;
 }
 .logo img{
-    width: 110px;
+    width: 80px;
+    position: relative;
+    top: -20px;
+    margin-left: -46px;
+    
 }
-
-
 .navigation a {
   position: relative;
-  font-size: 1.1em;
+  font-size: 1em;
   color: bisque;
   text-decoration: none;
   font-weight: 500;
   margin-left: 30px;
   gap: 20px;
+  left: 40px;
 }
 
 .navigation .btnLogin {
@@ -59,35 +79,70 @@ header{
     font-size: 1.1em;
     color: bisque;
     margin-left: 40px;
-    font-weight: 500; 
+    font-weight: 500;
+    background-color: #e15b46;
+    color: bisque;
+    border: 1.5px solid #436464ac; 
     
 }
+.navigation .btnLogin:hover {
 
+  background-color: #436464ac;
+    border: 1.5px solid #436464ac;
+    
+  
+}
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: url(image.png) no-repeat;
     width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
 }
 .footer{
     color: bisque;
     text-align: center;
-    padding: 40px 0;
-    background-color: transparent;
+    padding: 10px 0;
+    margin: 0;
+    /* background-color: #cb5846;  */
+    font-size: 15px;
+    margin-top: auto;
+    position: relative;
+    width: 85vw;
+    height: 70px;
+    border: none;
+    margin-top: auto;
+    line-height: 60px;
+    opacity: 1;
 }
 
-.footer .social{
+
+
+/* .footer .social{
     display: flex;
     justify-content: center;
 }
+
+.footer .social a{
+    padding: 20px;
+    width: 50px;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+} */
 .footer ul {
     margin-top:0 ;
     color: bisque;
     padding: 0;
-    list-style: none;
-    font-size: 18px;
+    font-size: 12px;
     line-height: 1.6;
     margin-bottom: 0;
 
@@ -105,11 +160,172 @@ body{
 }
 
 .footer .copyright{
-    margin: 15px;
+    margin: 0;
     text-align: center;
-    font-size: 13px;
+    font-size: 11px;
     color: #aaa;
 }
 
+.hero {
+    background-image: url('heroimg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 30px; 
+    color:bisque;
+    text-align: center;
+    position: relative;
+    opacity: 0.8;
+    width: 85vw;
+    height: 85vw;
+    align-items: center;
+    justify-content: center;
+  
+    /* flex: 1; */
+  }
+  
+  .hero::before {
+  
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(56, 55, 55, 0.269); /* koyu filtre */
+    z-index: 0;
+  }
+  
+  .hero .hero-content {
+    position: relative;
+    align-items: center;
+    z-index: 1;
+    max-width: 1000px;
+    max-height: 500px;
+    background-color: #436464ac;
+    justify-content: center;
+    padding: 0 20px;
+    text-align: center;
 
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  .hero h2 {
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    color: bisque;
+    opacity: 2;
+  }
+  
+  .hero-buttons .btn {
+    padding: 12px 24px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.3s;
+    opacity: 0.9;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #e15b46;
+  }
+  
+  .btn.primary {
+    background-color: #e15b46;
+    color: bisque;
+    border: 1.5px solid #436464ac;    
+  }
+  
+  .btn.primary:hover {
+    background-color: #436464ac;
+    border: 1.5px solid #436464ac;
+    
+  }
+  
+  .btn.secondary {
+    background-color: #e15b46;
+    color: bisque;
+    border: 1.5px solid #436464ac;
+  }
+  
+  .btn.secondary:hover {
+    background-color: #436464ac;
+    border: 1.5px solid #436464ac;
+  }
+
+  .form {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background-color: bisque;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255 , .5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+ form .form-box {
+  width: 100%;
+  padding: 40px;
+}
+
+.form-box h2 {
+  font-size: 2em;
+  color: bisque;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.input-box label{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+  color: bisque;
+}
+.input-box input{
+  height: 100%;
+  width: 100%;
+  background-color: bisque;
+  opacity: 0.6;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  
+}
+
+.check-box {
+  color: bisque;
+}
+.register{
+  color: bisque;
+}
+.check-box{
+  justify-content: space-between;
+
+}
+.register-link{
+  
+}
+.btn{
+  width: 100%;
+  height: 35px;
+  background-color: bisque;
+  opacity: 0.6;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  font-size: 1em;
+  color: #141818ac;
+  
+}
 
