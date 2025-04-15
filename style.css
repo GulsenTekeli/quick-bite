@@ -259,6 +259,20 @@ body{
     border: 1.5px solid #436464ac;
   }
 
+  .subbtn {
+    background-color: bisque;
+    opacity: 0.4;
+    border-radius: 10px;
+    width: 100%;
+    border: none;
+
+  }
+  .contact-form {
+    color: bisque;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+
   .form {
     position: relative;
     width: 400px;
@@ -284,6 +298,25 @@ body{
   font-family: 'Poppins', sans-serif;
   text-align: center;
 }
+.contact-form{
+  position: relative;
+    width: 400px;
+    height: 440px;
+    background-color: bisque;
+    background: transparent;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.input-box textarea{
+  width: 100%;
+  height: 50%;
+  border-radius: 20px;
+  background-color: bisque;
+  opacity: 0.4;
+}
 
 .input-box label{
   position: relative;
@@ -300,6 +333,7 @@ body{
   border: none;
   outline: none;
   border-radius: 6px;
+  opacity: 0.4;
   
 }
 
