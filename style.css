@@ -316,6 +316,7 @@ body{
   border-radius: 20px;
   background-color: bisque;
   opacity: 0.4;
+  padding: 20px;
 }
 
 .input-box label{
