@@ -21,19 +21,19 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    width: 85vw;
+    width: 100%;
     height: 95%;
-    padding: 11px 40px;
+    padding: 15px 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    z-index: 99;
+    z-index: 1000;
     margin-left: auto;
     /* background-color: #cb5846; */
     position: relative;
     margin: 0;
     font-size: 14px;
-    margin-top: auto;
+    
 }
 
 .logo{
@@ -58,25 +58,23 @@ header{
     width: 80px;
     position: relative;
     top: -20px;
-    margin-left: -46px;
+    margin: 0;
     
 }
 .navigation a {
-  position: relative;
   font-size: 1em;
   color: bisque;
   text-decoration: none;
-  font-weight: 500;
-  margin-left: 30px;
+  font-weight: 300;
+  margin-left: 20px;
   gap: 20px;
-  left: 40px;
 }
 
 .navigation .btnLogin {
-    padding: 5px 20px;
-    border: 1.5px solid bisque;
+    padding: 5px;
+    border: 1px solid bisque;
     border-radius: 6px;
-    font-size: 1.1em;
+    font-size: 16px;
     color: bisque;
     margin-left: 40px;
     font-weight: 500;
@@ -97,14 +95,13 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: url(image.png) no-repeat;
-    width: 100%;
+    background: url(backgroundimage.png);
+    width: auto;
     overflow-y: scroll;
-    overflow-x: hidden;
+    overflow-x: scroll;
     height: 100%;
     margin: 0;
-    padding: 0;
+    padding-top: 50px;
 
 }
 .footer{
@@ -138,7 +135,7 @@ body{
     text-align: center;
     text-decoration: none;
 } */
-.footer ul {
+/* .footer ul {
     margin-top:0 ;
     color: bisque;
     padding: 0;
@@ -157,13 +154,33 @@ body{
 .footer ul li{
     display: inline-block;
     padding: 0 15px;
-}
+}*/
 
 .footer .copyright{
     margin: 0;
     text-align: center;
     font-size: 11px;
     color: #aaa;
+} 
+
+.menu {
+  color: bisque;
+  text-align: center;
+
+}
+.services{
+  color: bisque;
+  text-align: center;
+}
+
+.contactUs{
+  color: bisque;
+  text-align: center;
+}
+
+section {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .hero {
@@ -179,7 +196,6 @@ body{
     height: 85vw;
     align-items: center;
     justify-content: center;
-  
     /* flex: 1; */
   }
   
@@ -202,6 +218,15 @@ body{
     padding: 0 20px;
     text-align: center;
 
+  }
+  .locations{
+    color: bisque;
+    text-align: center;
+    
+  }
+  .aboutUs{
+    color: bisque;
+    text-align: center;
   }
   
   .hero h1 {
@@ -267,11 +292,6 @@ body{
     border: none;
 
   }
-  .contact-form {
-    color: bisque;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-  }
 
   .form {
     position: relative;
@@ -308,6 +328,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: bisque;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
 
 }
 .input-box textarea{
@@ -348,9 +371,7 @@ body{
   justify-content: space-between;
 
 }
-.register-link{
-  
-}
+
 .btn{
   width: 100%;
   height: 35px;
@@ -361,6 +382,11 @@ body{
   border-radius: 6px;
   font-size: 1em;
   color: #141818ac;
-  
 }
 
+.contact {
+  margin: 0;
+  text-align: center;
+  font-size: 11px;
+  color: #aaa;
+}
