@@ -53,7 +53,7 @@ header {
 .logo img {
     width: 80px;
     position: relative;
-    top: -20px;
+    top: 10px;
 }
 
 .navigation a {
@@ -277,19 +277,289 @@ header {
     border-radius: 10px;
 }
 
-.services {
-
-        position: relative;
-        z-index: 1;
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 40px 20px;
-        background-color: #436464ac;
-        border-radius: 10px;
-    
-}
-.pages {
+.ready-to-eat {
    
+    background-image: url('readytoeat.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 30px;
+    color: bisque;
+    text-align: center;
+    position: relative;
+    width: 85vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+}
+
+.ready-to-eat .services-content1 {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #436464ac;
+    border-radius: 10px;
+}
+
+.ready-to-eat h2 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.ready-to-eat p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.quick-purchase {
+   
+    background-image: url('quickPurchase.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 30px;
+    color: bisque;
+    text-align: center;
+    position: relative;
+    width: 85vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+}
+
+.quick-purchase .services-content2 {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #436464ac;
+    border-radius: 10px;
+}
+
+.quick-purchase h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.quick-purchase p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.promotion {
+    background-image: url('promotion.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 30px;
+    color: bisque;
+    text-align: center;
+    position: relative;
+    width: 85vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.promotion .services-content3 {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #436464ac;
+    border-radius: 10px;
+}
+
+.promotion h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.promotion p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+
+.whoWeAre {
+    background-image: url('whoWeAre.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 30px;
+    color: bisque;
+    text-align: center;
+    position: relative;
+    width: 85vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.whoWeAre .page-content1{
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #436464ac;
+    border-radius: 10px;
+}
+
+.whoWeAre h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.whoWeAre p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.why {
+    background-image: url('why.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 30px;
+    color: bisque;
+    text-align: center;
+    position: relative;
+    width: 85vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.why .page-content2{
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #436464ac;
+    border-radius: 10px;
+}
+
+.why h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.why p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.how {
+    background-image: url('how.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 30px;
+    color: bisque;
+    text-align: center;
+    position: relative;
+    width: 85vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.how .page-content3 {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #436464ac;
+    border-radius: 10px;
+}
+
+.how h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.how p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.customer {
+    background-image: url('customer.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 30px;
+    color: bisque;
+    text-align: center;
+    position: relative;
+    width: 85vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+
+}
+.customer .contact-content1 {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #436464ac;
+    border-radius: 10px;
+}
+
+.customer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.customer p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.bussiness{
+    background-image: url('bussiness.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 30px;
+    color: bisque;
+    text-align: center;
+    position: relative;
+    width: 85vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.bussiness .contact-content2 {
+    position: relative;
+    z-index: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #436464ac;
+    border-radius: 10px;
+}
+
+.customer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.customer p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+
+.pages {
+
   background-size: cover;
   background-position: center;
   padding: 100px 30px;
@@ -303,6 +573,21 @@ header {
   margin-bottom: 30px;
   background-color: #436464a2 ;
 
+}
+
+.services {
+    background-size: cover;
+    background-position: center;
+    padding: 100px 30px;
+    color: bisque;
+    text-align: center;
+    position: relative;
+    width: 85vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-color: #436464a2 ;
 }
 
 
@@ -347,14 +632,14 @@ header {
 .hero-buttons {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 100px;
     flex-wrap: wrap;
 }
 
 .hero-buttons .btn {
     padding: 12px 24px;
     border: none;
-    margin: 0 10px;
+    margin: 20px 20px;
     border-radius: 8px;
     text-decoration: none;
     font-size: 0.9rem;
