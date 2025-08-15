@@ -21,7 +21,6 @@
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
                 <a href="login.html" class="btnLogin">Login</a>
-              
           <div class="cart-container">
             <i class="fa-solid fa-cart-shopping"></i>
             <span id="cart-count">0</span>
@@ -31,26 +30,35 @@
         
     </header> 
    
-    <section class="hero">
-        <div class="hero-content">
-          <h1>Quick Bite</h1>
-          <h2>Grab, Bite, Delight</h2>
-          <p>Authentic Turkish flavors now available in smart vending machines across the city. Fresh, fast, and full of flavor!</p>
-        </div>
 
-        <div class="hero-buttons">
-          <a href="locationsPage.html" class="btn primary">Find a Machine</a>
-          <a href="menu.html" class="btn secondary">Explore Menu</a>
-        </div>
-    </section>
+<section class="product-grid">
+    <div class="product-card">
+        <img src="img/cigkofte.jpg" alt="Cigkofte">
+        <h3>Cigkofte</h3>
+        <p>€3.50</p>
+        <button onclick="addToCart({name: 'Cigkofte', price: 3.0})">
+            Add to Cart
+        </button>
+    </div>
 
-   
-    <footer>
-        <section class="footer">
-          <p class="copyright">© 2025 QuickBite - All rights reserved.</p>
-          <p class="contact"> support@quickbite.com | +1 234 567 890</p>
-        </section>
-    </footer>
-    <script src="script.js"></script>
-</body>
-</html>
+    <div class="product-card">
+        <img src="img/saksuka.jpg" alt="saksuka">
+        <h3>Saksuka</h3>
+        <p>€4.00</p>
+        <button onclick="addToCart({name: 'saksuka', price: 4.0})">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="product-card">
+        <img src="img/humus.jpg" alt="humus">
+        <h3>Humus</h3>
+        <p>€4.00</p>
+        <button onclick="addToCart({name: 'humus', price: 4.0})">
+            Add to Cart
+        </button>
+    </div>
+</section>
+
+<script src="script.js"></script>
+

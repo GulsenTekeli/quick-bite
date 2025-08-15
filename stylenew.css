@@ -17,7 +17,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background: url(backgroundimage.png);
+    background: url(img/backgroundimage.png);
     background-size: cover;
     background-attachment: fixed;
     color: bisque;
@@ -30,7 +30,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 15px 15px;
+    padding: 10px 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -48,6 +48,7 @@ header {
     width: auto;
     display: flex;
     align-items: center;
+    margin-left: 0;
 }
 
 .logo img {
@@ -94,7 +95,7 @@ header {
 }
 
 .hero {
-    background-image: url('heroimg.jpg');
+    background-image: url('img/heroimg.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 30px;
@@ -109,7 +110,7 @@ header {
 }
 
 .pastries {
-    background-image: url('pastries.jpg');
+    background-image: url('img/pastries.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 30px;
@@ -123,6 +124,7 @@ header {
     margin-bottom: 30px;
     
 }
+
 
 
 .pastries .menu-content1 {
@@ -147,7 +149,7 @@ header {
 
 
 .mezes {
-    background-image: url('mezes.jpg');
+    background-image: url('img/mezes.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 30px;
@@ -182,7 +184,7 @@ header {
 }
 
 .beverages {
-    background-image: url('beverages.jpg');
+    background-image: url('img/beverages.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 30px;
@@ -198,7 +200,7 @@ header {
 }
 
 .soups {
-    background-image: url('soups.jpg');
+    background-image: url('img/soups.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 30px;
@@ -223,7 +225,7 @@ header {
 }
 
 .desserts {
-    background-image: url('desserts.jpg');
+    background-image: url('img/desserts.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 30px;
@@ -279,7 +281,7 @@ header {
 
 .ready-to-eat {
    
-    background-image: url('readytoeat.jpg');
+    background-image: url('img/readytoeat.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 30px;
@@ -316,7 +318,7 @@ header {
 
 .quick-purchase {
    
-    background-image: url('quickPurchase.jpg');
+    background-image: url('img/quickPurchase.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 30px;
@@ -352,7 +354,7 @@ header {
 }
 
 .promotion {
-    background-image: url('promotion.jpg');
+    background-image: url('img/promotion.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 30px;
@@ -387,7 +389,7 @@ header {
 
 
 .whoWeAre {
-    background-image: url('whoWeAre.jpg');
+    background-image: url('img/whoWeAre.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 30px;
@@ -421,7 +423,7 @@ header {
 }
 
 .why {
-    background-image: url('why.jpg');
+    background-image: url('img/why.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 30px;
@@ -455,7 +457,7 @@ header {
 }
 
 .how {
-    background-image: url('how.jpg');
+    background-image: url('img/how.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 30px;
@@ -489,7 +491,7 @@ header {
 }
 
 .customer {
-    background-image: url('customer.jpg');
+    background-image: url('img/customer.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 30px;
@@ -524,7 +526,7 @@ header {
 }
 
 .bussiness{
-    background-image: url('bussiness.jpg');
+    background-image: url('img/bussiness.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 30px;
@@ -774,3 +776,115 @@ section {
         font-size: 1.2rem;
     }
 }
+
+.cart-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.cart-container i {
+    font-size: 24px;
+    color: bisque;
+}
+
+#cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #e15b46;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+.cart-container {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+  margin-left: 20px;
+}
+#cart-count {
+  background-color: #e15b46;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 6px;
+  font-size: 14px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.product-card {
+  background-color: rgba(255, 228, 196, 0.15);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-card button {
+  background-color: #e15b46;
+  color: bisque;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background-color: #436464ac;
+}
+.cart-section {
+  background-color: rgba(255, 228, 196, 0.1);
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#cart-items {
+  list-style: none;
+  padding: 0;
+}
+
+#cart-items li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 5px 0;
+}
+
+/* Back to Top butonu */
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e15b46;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#back-to-top:hover {
+  background-color: #436464ac;
+}
+
+

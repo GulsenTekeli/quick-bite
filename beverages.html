@@ -21,8 +21,8 @@
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
                 <a href="login.html" class="btnLogin">Login</a>
-              
-          <div class="cart-container">
+        
+         <div class="cart-container">
             <i class="fa-solid fa-cart-shopping"></i>
             <span id="cart-count">0</span>
         </div>
@@ -31,26 +31,32 @@
         
     </header> 
    
-    <section class="hero">
-        <div class="hero-content">
-          <h1>Quick Bite</h1>
-          <h2>Grab, Bite, Delight</h2>
-          <p>Authentic Turkish flavors now available in smart vending machines across the city. Fresh, fast, and full of flavor!</p>
-        </div>
 
-        <div class="hero-buttons">
-          <a href="locationsPage.html" class="btn primary">Find a Machine</a>
-          <a href="menu.html" class="btn secondary">Explore Menu</a>
-        </div>
-    </section>
+<section class="product-grid">
+    <div class="product-card">
+        <img src="img/cay.jpg" alt="Cay">
+        <h3>Cay</h3>
+        <p>€3.50</p>
+        <button onclick="addToCart({name: 'Cay', price: 3.0})">
+            Add to Cart
+        </button>
+    </div>
 
-   
-    <footer>
-        <section class="footer">
-          <p class="copyright">© 2025 QuickBite - All rights reserved.</p>
-          <p class="contact"> support@quickbite.com | +1 234 567 890</p>
-        </section>
-    </footer>
-    <script src="script.js"></script>
-</body>
-</html>
+    <div class="product-card">
+        <img src="img/turkkahvesi.jpg" alt="Turk Kahvesi">
+        <h3>Turk Kahvesi</h3>
+        <p>€4.00</p>
+        <button onclick="addToCart({name: 'turkkahvesi', price: 4.0})">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="product-card">
+        <img src="img/ayran.jpg" alt="ayran">
+        <h3>Ayran</h3>
+        <p>€4.00</p>
+        <button onclick="addToCart({name: 'ayran', price: 4.0})">
+            Add to Cart
+        </button>
+    </div>
+</section>
